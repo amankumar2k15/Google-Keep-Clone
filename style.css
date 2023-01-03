@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: rgb(228, 231, 236);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading {
+    width: 100vw;
+    height: 5.0rem;
+    background-color: rgb(249, 195, 58);
+    color: rgb(67, 27, 67);
+    box-shadow: 0px 10px 16px rgb(245, 229, 229);
+}
+
+.heading h1 {
+    line-height: 5.8rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    font-size: 1.78rem;
+}
+
+.add:active {
+    transform: scale(0.98)
+}
+
+/* Button Style Start  */
+
+.btn-div {
+    position: fixed;
+    top: 7rem;
+    right: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: rgb(249, 195, 58);
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgb(255, 252, 252);
+}
+
+/* button.learn-more .circle .icon .fa-solid{
+    transition: none;
+    background-color: #f9c33a;
+    margin-right: -1.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+} */
+
+
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgb(79, 50, 79);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .button-text {
+    color: white;
+}
+
+/* Button Styling End  */
+
+.container{  
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    position: absolute;
+    top: 11rem;
+    width: 100vw;
+    height: 35.4rem;
+    border-radius: 0.2rem;
+    /* overflow: auto; */
+ 
+}
+.container .note {
+    margin: 0.8rem 0.8rem;
+    width: 16.5rem;
+    height: 10.4rem;
+    border-radius: 0.2rem;
+    background-color: white;
+
+}
+
+.container .note .operation {
+    height: 2rem;
+    float: right;
+}
+
+.container .note .operation .edit {
+    background-color: rgb(227, 216, 216);
+    color: green;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.4rem;
+    margin-right: 0.2rem;
+
+}
+
+.container .note .operation .edit:hover {
+    background-color: green;
+    color: rgb(227, 216, 216);
+    border-radius: 0.8rem;
+}
+
+.container .note .operation .delete {
+    /* background-color: whitesmoke;  */
+    color: red;
+    background-color: rgb(227, 216, 216);
+    border-radius: 0.8rem;
+    transition: 0.5s;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.4rem;
+    margin-right: 0.4rem;
+
+}
+
+.container .note .operation .delete:hover {
+    background-color: red;
+    color: rgb(227, 216, 216);
+    border-radius: 0.8rem;
+}
+
+.container .note .main{
+    position: relative;
+    top: 2.1rem;
+    left: 0.2rem;
+    height: 1.1rem;
+    width: 16.1rem;
+    border: none;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+textarea {
+    position: relative;
+    top: 1.1rem;
+    left: 0.2rem;
+    height: 7.1rem;
+    width: 16.1rem;
+    border: none;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hidden{
+    display: none;
+}
