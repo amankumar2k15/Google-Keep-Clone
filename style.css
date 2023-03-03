@@ -10,10 +10,11 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-wrap: wrap;
+    width: 1536px;
 }
 
 .heading {
-    width: 100vw;
+    width: 100%;
     height: 5.0rem;
     background-color: rgb(249, 195, 58);
     color: rgb(67, 27, 67);
@@ -34,6 +35,7 @@ body {
 /* Button Style Start  */
 
 .btn-div {
+    z-index: 99;
     position: fixed;
     top: 7rem;
     right: 1rem;
@@ -82,17 +84,6 @@ button.learn-more .circle .icon {
     background: rgb(255, 252, 252);
 }
 
-/* button.learn-more .circle .icon .fa-solid{
-    transition: none;
-    background-color: #f9c33a;
-    margin-right: -1.8rem;
-    position: absolute;
-    top: 1rem;
-    right: 1.2rem;
-} */
-
-
-
 button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
@@ -120,18 +111,20 @@ button:hover .button-text {
 /* Button Styling End  */
 
 .container{  
-    display: grid;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 0 54px;
     grid-template-columns: repeat(5,2fr);
     position: absolute;
+    flex-wrap: wrap;
     top: 11rem;
-    width: 100vw;
-    height: 35.4rem;
+    width: 1496px;
     border-radius: 0.2rem;
-    /* overflow: auto; */
+   
  
-}
+} 
 .container .note {
-    margin: 0.8rem 0.8rem;
     width: 16.5rem;
     height: 10.4rem;
     border-radius: 0.2rem;
